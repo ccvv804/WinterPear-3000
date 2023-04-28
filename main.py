@@ -84,9 +84,11 @@ while(True):
     pipe.watermarker.apply_watermark(pil_image, pipe.unet.config.sample_size)
 
     pil_image[0].save(f"./{start_dt}_DeepFloyd_IFstage1.png")
+    """
     restart_check = input("Restart?: ")
     if not(restart_check == "no" or restart_check == "NO" or restart_check == "N"):
         continue
+    """
     # unload stage1 model
     del pipe
     flush()
@@ -113,9 +115,11 @@ while(True):
     pipe.watermarker.apply_watermark(pil_image, pipe.unet.config.sample_size)
 
     pil_image[0].save(f"./{start_dt}_DeepFloyd_IFstage2.png")
+    """
     restart_check = input("Restart?: ")
     if not(restart_check == "no" or restart_check == "NO" or restart_check == "N"):
         continue
+    """
 
     #unload stage2 model
     del pipe
