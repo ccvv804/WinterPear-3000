@@ -26,6 +26,7 @@ while(True):
     elif(prompt == "exit()"):break
     negative_prompt = input("negative_prompt: ")
     if(negative_prompt == ""):negative_prompt = default_negative_prompt
+    elif(negative_prompt == " "):negative_prompt = ""
     steps = input(f"stage1 steps(default: {default_steps}): ")
     if(steps == ""):steps = default_steps
     start_dt = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
@@ -84,14 +85,13 @@ while(True):
     pipe.watermarker.apply_watermark(pil_image, pipe.unet.config.sample_size)
 
     pil_image[0].save(f"./{start_dt}_DeepFloyd_IFstage1.png")
-    """
-    restart_check = input("Restart?: ")
-    if not(restart_check == "no" or restart_check == "NO" or restart_check == "N"):
-        continue
-    """
     # unload stage1 model
     del pipe
     flush()
+
+    proceed_check = input("Proceed to the next stage?: ")
+    if(proceed_check == "no" or proceed_check == "NO" or proceed_check == "N"):
+        continue
 
     # load stage2 model
     print("Loading stage2 model...",end="")
@@ -115,15 +115,14 @@ while(True):
     pipe.watermarker.apply_watermark(pil_image, pipe.unet.config.sample_size)
 
     pil_image[0].save(f"./{start_dt}_DeepFloyd_IFstage2.png")
-    """
-    restart_check = input("Restart?: ")
-    if not(restart_check == "no" or restart_check == "NO" or restart_check == "N"):
-        continue
-    """
 
     #unload stage2 model
     del pipe
     flush()
+
+    proceed_check = input("Proceed to the next stage?: ")
+    if(proceed_check == "no" or proceed_check == "NO" or proceed_check == "N"):
+        continue
 
     # load stage3 model
     print("Loading stage3 model...",end="")
