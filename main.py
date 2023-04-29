@@ -143,3 +143,5 @@ while(True):
     watermarker.apply_watermark(pil_image, pipe.unet.config.sample_size)
 
     pil_image[0].save(f"./{start_dt}_DeepFloyd_IFstage3.png")
+    del watermarker
+    flush()
