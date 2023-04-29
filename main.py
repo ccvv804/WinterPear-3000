@@ -29,8 +29,9 @@ while(True):
     elif(negative_prompt == " "):negative_prompt = ""
     steps = input(f"stage1 steps(default: {default_steps}): ")
     if(steps == ""):steps = default_steps
-    start_dt = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+    else:steps = int(steps)
 
+    start_dt = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 
     print("Loading Text Encoder...",end="")
     text_encoder = T5EncoderModel.from_pretrained(
