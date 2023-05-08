@@ -3,7 +3,7 @@
 
 ## How to 
  * huggingface 저장소 설명이 정확하지 않을 수 있습니다.
- * 최소 12GB VRAM을 가진 엔비디아 RTX 또는 동급의 그래픽카드가 필요합니다.
+ * 최소 12GB VRAM을 가진 엔비디아 RTX 또는 동급의 그래픽카드가 필요합니다. (지포스 GTX는 안됩니다)
 ### install (Windows 10/11)
 1. install git, Python 3.10, CUDA Toolkit 11.7
 2. Register git, Python 3.10, and CUDA Toolkit 11.7 in PATH.
