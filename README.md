@@ -2,7 +2,6 @@
 [Stella2211/DeepFloyd_IF_VRAM12GB.py](https://gist.github.com/Stella2211/ab17625d63aa03e38d82ddc8c1aae151) 간단한 변형입니다.
 ## How to 
 ### install Windows 10/11
-0. 
 1. install git, Python 3.10, CUDA Toolkit 11.7
 2. Register git, Python 3.10, and CUDA Toolkit 11.7 in PATH.
 3. You must not have any other version of CUDA Toolkit in your PATH.
