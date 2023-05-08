@@ -1,7 +1,7 @@
 ## WinterPear-3000
 [Stella2211/DeepFloyd_IF_VRAM12GB.py](https://gist.github.com/Stella2211/ab17625d63aa03e38d82ddc8c1aae151) 간단한 변형입니다.
 ## How to 
-### install
+### install Windows 10/11
 1. install CUDA Toolkit 11.7
 2. Register CUDA Toolkit 11.7 PATH. C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin
 3. You must not have any other version of CUDA Toolkit in your PATH.
