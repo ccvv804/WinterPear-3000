@@ -1,5 +1,5 @@
 ## WinterPear-3000
-겨울배-3000은 [DeepFloyd IF](https://github.com/deep-floyd/IF)을 12GB VRAM으로 돌릴 수 있는 [Stella2211/DeepFloyd_IF_VRAM12GB.py](https://gist.github.com/Stella2211/ab17625d63aa03e38d82ddc8c1aae151)의 조잡한 개인 개조판 입니다. 
+겨울배-3000은 [DeepFloyd IF](https://github.com/deep-floyd/IF)을 12GB VRAM으로 돌릴 수 있는 [Stella2211/DeepFloyd_IF_VRAM12GB.py](https://gist.github.com/Stella2211/ab17625d63aa03e38d82ddc8c1aae151)의 조잡한 GUI 개조 버전 입니다. 
 
 ## How to 
  * huggingface 저장소 접근 설명이 정확하지 않을 수 있습니다.
