@@ -1,8 +1,8 @@
 ## WinterPear-3000
 [Stella2211/DeepFloyd_IF_VRAM12GB.py](https://gist.github.com/Stella2211/ab17625d63aa03e38d82ddc8c1aae151) 간단한 변형입니다. 
 
-자세한것은 모릅니다.
 ## How to 
+ * huggingface 저장소 설명이 정확하지 않을 수 있습니다.
 ### install (Windows 10/11)
 1. install git, Python 3.10, CUDA Toolkit 11.7
 2. Register git, Python 3.10, and CUDA Toolkit 11.7 in PATH.
