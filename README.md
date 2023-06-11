@@ -55,6 +55,7 @@ pip3 install --upgrade diffusers transformers safetensors sentencepiece accelera
 pip3 install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 pip3 install bitsandbytes
 pip3 install huggingface_hub
+pip3 install scipy 
 python3
 from huggingface_hub import login
 login()
