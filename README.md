@@ -40,3 +40,36 @@ exit()
 ```sh
 python winterpear-3000.py
 ```
+### install? (Ubuntu 22.04)
+1. You must have Nvidia drivers installed.
+2. Enter the commands below line by line.
+```sh
+git clone https://github.com/ccvv804/WinterPear-3000
+cd WinterPear-3000
+python3 -m venv venv
+source ./venv/bin/activate
+pip3 install deepfloyd_if==1.0.2rc0
+pip3 install xformers
+pip3 install git+https://github.com/openai/CLIP.git --no-deps
+pip3 install --upgrade diffusers transformers safetensors sentencepiece accelerate
+pip3 install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip3 install bitsandbytes
+pip3 install huggingface_hub
+python3
+from huggingface_hub import login
+login()
+```
+5. Enter the hugging face token to access the DeepFloyd IF storage and save it.
+6. Enter the commands below line by line.
+```sh
+exit()
+```
+### run? (Ubuntu 22.04)
+1. Enter the Python virtual environment (venv). Pass if already venv.
+```sh
+source ./venv/bin/activate
+```
+2. Start the Python program. This program is a GUI.
+```sh
+python3 winterpear-3000.py
+```
