@@ -40,7 +40,7 @@ exit()
 ```sh
 python winterpear-3000.py
 ```
-### install? (Ubuntu 22.04)
+### install (Ubuntu 22.04)
 1. You must have Nvidia drivers installed.
 2. Enter the commands below line by line.
 ```sh
@@ -65,7 +65,7 @@ login()
 ```sh
 exit()
 ```
-### run? (Ubuntu 22.04)
+### run (Ubuntu 22.04)
 1. Enter the Python virtual environment (venv). Pass if already venv.
 ```sh
 source ./venv/bin/activate
